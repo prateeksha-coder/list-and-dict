@@ -7,7 +7,7 @@ my_dict = {1: 'apple', 2: 'ball'}
 # dictionary with mixed keys
 my_dict = {'name': 'John', 1: [2, 4, 3]}
 
-my_dict = {'name': 'Jack', 'age': 26}
+my_dict = {'name': 'Jack', 'age': 26,'hobby':"reading"}
 
 # Output: Jack
 print(my_dict['name'])
@@ -24,9 +24,11 @@ print(my_dict)
 # remove particular element
 my_dict.pop('age')
 print(my_dict)
+print(my_dict.popitem())
 
 # access a particular element
-print("Address :", my_dict.get('address'))
+print("Address :", my_dict.get('name'))
+print("Address :", my_dict['name'])
 
 # remove all the elements
 my_dict.clear()
