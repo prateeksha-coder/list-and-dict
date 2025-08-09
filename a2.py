@@ -2,16 +2,16 @@
 my_dict = {}
 
 # dictionary with integer keys
-my_dict = {1: 'apple', 2: 'ball'}
+my_dict1 = {1: 'apple', 2: 'ball'}
 
 # dictionary with mixed keys
-my_dict = {'name': 'John', 1: [2, 4, 3]}
+my_dict2 = {'name': 'John', 1: [2, 4, 3]}
 
 my_dict = {'name': 'Jack', 'age': 26,'hobby':"reading"}
 
-# Output: Jack
-print(my_dict['name'])
-print(my_dict.get('age'))
+# access a particular element
+print("Name :", my_dict.get('name'))
+print("Name :", my_dict['name'])
 
 # update value
 my_dict['age'] = 27
@@ -25,10 +25,6 @@ print(my_dict)
 my_dict.pop('age')
 print(my_dict)
 print(my_dict.popitem())
-
-# access a particular element
-print("Address :", my_dict.get('name'))
-print("Address :", my_dict['name'])
 
 # remove all the elements
 my_dict.clear()
